@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal page</title>
+
+</head>
+<body>
+<div class="main-window">
+<button class="fst-button" id="open-modal" >Открыть модалку </button>
+</div>
+<div class="modal-wrapper" id="modal" style="display: none">
+
+    <div class="modal-window">
+
+        <div class="close" id="close-modal" style="display: flex">  </div>
+        <div class="percent"> +100% </div>
+    <div class="timer">
+        <div class="timer-img"></div>
+        <div id="timer"></div>
+    </div>
+    <div>
+        <form>
+            <label> <p class="deposit">Увеличьте свой депозит!</p>
+                <select required class="select" id="payment-select">
+                    <option class="payment">Банковская карта</option>
+                    <option class="payment">Биткоин</option>
+                    <option class="payment">Выставить счёт</option>
+                </select>
+            </label>
+            <div class="radio-label-wrapper">
+                <label class="radio-label">
+                    <input class="a" type="radio" name="radioname" value="100" />
+                    <div class="money-box">
+                        <div >Пополнить на  <div class="top-up-span">$ 50</div></div>
+                        <div class="cash-box">Получить <div class="get-span">$ 100</div></div>
+                    </div>
+                </label>
+                <label class="radio-label">
+                    <input class="a" type="radio" name="radioname" value="200" checked="checked"/>
+                    <div class="money-box">
+                        <div >Пополнить на  <div class="top-up-span">$ 100</div></div>
+                        <div class="cash-box">Получить <div class="get-span">$ 200</div></div>
+                    </div>
+                </label>
+                <label class="radio-label">
+                    <input class="a" type="radio" name="radioname" value="1000" />
+                    <div class="money-box">
+                        <div >Пополнить на  <div class="top-up-span">$ 500</div></div>
+                        <div class="cash-box">Получить <div class="get-span">$ 1000</div></div>
+                    </div>
+                </label>
+            </div>
+        </form>
+    </div>
+
+    <!--<div>Пополнить на 50$ </div>
+    <div> Пополнить на 100$</div>
+    <div> Пополнить на 500$</div>-->
+        <div class="cash"> <p> <span class="result-money" >$<span id="result">200</span>,00 </span>будет зачислено вам на счёт</p> </div>
+    <button class="topup" id="topup">Пополнить</button>
+        <div class="politics">При пополнении счёта с банковской карты списание средств происходит по курсв банка клиента </div>
+    <div class="detail"> Подробнее</div>
+
+
+    </div>
+</div>
+
+<script src="../dist/main.js"></script>
+</body>
+</html>
